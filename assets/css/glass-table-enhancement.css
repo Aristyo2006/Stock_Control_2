@@ -1,0 +1,113 @@
+/* Additional Glass Table Enhancements for Material 3 System */
+
+/* Enhanced glass container for tables */
+.glass-container {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.05) 100%);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  padding: 24px;
+  margin: 20px 0;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1), 0 2px 8px rgba(0, 0, 0, 0.05), inset 0 1px 0 rgba(255, 255, 255, 0.3),
+    inset 0 -1px 0 rgba(255, 255, 255, 0.1);
+  position: relative;
+  overflow: hidden;
+}
+
+[data-theme="dark"] .glass-container {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0.03) 100%);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3), 0 2px 8px rgba(0, 0, 0, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.2), inset
+    0 -1px 0 rgba(255, 255, 255, 0.05);
+}
+
+/* Override existing table styles with glass effect */
+table.glass-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Enhanced action buttons */
+.action-btn,
+.btn.btn-edit,
+.btn.btn-hapus {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 16px;
+  margin: 0 4px;
+  border: none;
+  border-radius: 20px;
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  min-height: 32px;
+}
+
+.btn.btn-edit,
+.action-btn-edit {
+  background: linear-gradient(135deg, rgba(125, 82, 96, 0.2) 0%, rgba(125, 82, 96, 0.1) 100%);
+  color: var(--md-sys-color-on-tertiary-container);
+  box-shadow: 0 2px 8px rgba(125, 82, 96, 0.2);
+}
+
+.btn.btn-hapus,
+.action-btn-delete {
+  background: linear-gradient(135deg, rgba(186, 26, 26, 0.2) 0%, rgba(186, 26, 26, 0.1) 100%);
+  color: #ff6b6b;
+  box-shadow: 0 2px 8px rgba(186, 26, 26, 0.2);
+}
+
+/* Enhanced navigation links */
+.page-links {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.05) 100%);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  padding: 16px 20px;
+  margin-bottom: 24px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1), inset 0 1px 0 rgba(255, 255, 255, 0.3);
+  border-left: 4px solid var(--md-sys-color-primary);
+}
+
+.page-links a,
+.nav-link {
+  color: var(--md-sys-color-primary);
+  text-decoration: none;
+  font-weight: 500;
+  padding: 8px 16px;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid transparent;
+}
+
+.page-links a:hover,
+.nav-link:hover {
+  background: rgba(103, 80, 164, 0.1);
+  border: 1px solid rgba(103, 80, 164, 0.2);
+  transform: translateY(-1px);
+  box-shadow: 0 2px 8px rgba(103, 80, 164, 0.2);
+}
